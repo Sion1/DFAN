@@ -1,4 +1,4 @@
-# MSDN
+# DFAN
 
 This is the total codes of paper "**Dual Feature Augmentation Network for Generalized Zero-shot Learning**" accepted to *BMVC'23*. This website includes the following materials for testing and checking our results reported in our paper:
 
