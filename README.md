@@ -1,7 +1,8 @@
 # DFAN
 
 
-This repository contains the training and test code for the paper  "***TransZero: Attribute-guided Transformer for Zero-Shot Learning***" accepted to BMVC 2023. 
+This repository contains the training and test code for the paper  "***Dual Feature Augmentation Network for
+Generalized Zero-shot Learning***" accepted to BMVC 2023. 
 
 ![](figs/pipeline.png)
 
