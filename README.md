@@ -21,7 +21,6 @@ We provide trained models ([Google Drive](https://drive.google.com/drive/folders
 ## References
 Parts of our codes based on:
 * [FaisalAlamri0/ViT-ZSL](https://github.com/FaisalAlamri0/ViT-ZSL)
-* [zhangxuying1004/RSTNet](https://github.com/zhangxuying1004/RSTNet)
 
 ## Contact
 If you have any questions about codes, please don't hesitate to contact us by xl294487391@gmail.com.
