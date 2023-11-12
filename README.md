@@ -8,13 +8,16 @@ Generalized Zero-shot Learning***" accepted to BMVC 2023.
 
 ## Running Environment
 The implementation of **DFAN** is mainly based on Python 3.7.16 and [PyTorch](https://pytorch.org/) 1.12.1. To install all required dependencies:
-
+```
 $ pip install -r requirements.txt
+```
 
 ### Training Script
+```
 $ python MSDN_cub.py
 $ python MSDN_sun.py
 $ python MSDN_awa2.py
+```
 
 
 ### Preparing Dataset and Model
