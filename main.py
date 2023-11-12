@@ -39,6 +39,8 @@ parser.add_argument('--v_embedding', default=2048, type=int, help='visual featur
 parser.add_argument('--region_num', default=196, type=int,
                     help='region number according to img size: [(224 * 224):49|(448 * 448):196]')
 parser.add_argument('--image_size', default=448, type=int, help='img size: [224 : 448]')
+parser.add_argument('--beta1', default=0.5, type=float, help='the coefficient of local weight')
+parser.add_argument('--beta2', default=0.5, type=float, help='the coefficient of global weight')
 args = parser.parse_args()
 
 for k, v in sorted(vars(args).items()):
