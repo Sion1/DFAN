@@ -14,9 +14,7 @@ $ pip install -r requirements.txt
 
 ### Training Script
 ```
-$ python MSDN_cub.py
-$ python MSDN_sun.py
-$ python MSDN_awa2.py
+$ python main.py --training --dataset DATA_SET --mat_path MAT_PATH
 ```
 
 
