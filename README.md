@@ -20,7 +20,7 @@ We provide trained models ([Google Drive](https://drive.google.com/drive/folders
 
 ## References
 Parts of our codes based on:
-* [hbdat/cvpr20_DAZLE](https://github.com/hbdat/cvpr20_DAZLE)
+* [FaisalAlamri0/ViT-ZSL](https://github.com/FaisalAlamri0/ViT-ZSL)
 * [zhangxuying1004/RSTNet](https://github.com/zhangxuying1004/RSTNet)
 
 ## Contact
