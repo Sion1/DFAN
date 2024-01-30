@@ -20,7 +20,7 @@ from utils import DataLoader, str2bool, compute_accuracy, mkdir_p, AverageMeter
 parser = argparse.ArgumentParser()
 parser.add_argument('--gpu', default=1, type=int, help='gpu num')
 parser.add_argument('--epoch', default=120, type=int, help='epoch num')
-parser.add_argument('--batch', default=1, type=int, help='batch size')
+parser.add_argument('--batch', default=32, type=int, help='batch size')
 parser.add_argument('--dataset', default='CUB', type=str, help='dataset: [CUB|AWA2|SUN]')
 parser.add_argument('--attr_num', default=312, type=int, help='attributes num: [CUB:312|AWA2:85|SUN:102]')
 parser.add_argument('--data_path', default='/home/c305/project/DATA_SET/CUB_200_2011/images', type=str,
