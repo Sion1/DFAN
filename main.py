@@ -296,8 +296,8 @@ def test(model, test_seen_loader, test_seen_labels, test_unseen_loader, test_uns
 
     # Representation
     with torch.no_grad():
-        seen_reprs = get_reprs(model, test_seen_loader, device)
-        unseen_reprs = get_reprs(model, test_unseen_loader, device)
+        seen_reprs = get_reprs(model, test_seen_loader, device, args)
+        unseen_reprs = get_reprs(model, test_unseen_loader, device, args)
     # Labels
     uniq_test_seen_labels = np.unique(test_seen_labels)
     uniq_test_unseen_labels = np.unique(test_unseen_labels)
