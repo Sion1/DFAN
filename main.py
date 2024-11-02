@@ -326,7 +326,7 @@ def test(model, test_seen_loader, test_seen_labels, test_unseen_loader, test_uns
     H = 2 * gzsl_unseen_acc * gzsl_seen_acc / (gzsl_unseen_acc + gzsl_seen_acc)
 
     #### update best results
-    if best_GZSL[2] < H * 100 and args.testing is None:
+    if best_GZSL[2] < H * 100 and args.testing is not True:
         print(' .... Saving GZSL best model ...')
         best_GZSL = [gzsl_unseen_acc * 100, gzsl_seen_acc * 100, H * 100]
         save_path = str(DATASET) + '__GZSL__' + str(pref) + '.pth'
@@ -335,7 +335,7 @@ def test(model, test_seen_loader, test_seen_labels, test_unseen_loader, test_uns
         if not os.path.isdir(ckpt_path):
             mkdir_p(ckpt_path)
         torch.save(model.state_dict(), path)
-    if best_ZSL < zsl_unseen_acc * 100 and args.testing is None:
+    if best_ZSL < zsl_unseen_acc * 100 and args.testing is not True:
         print(' .... Saving ZSL best model ...')
         best_ZSL = zsl_unseen_acc * 100
         save_path = str(DATASET) + '__ZSL__' + str(pref) + '.pth'
@@ -352,7 +352,7 @@ def test(model, test_seen_loader, test_seen_labels, test_unseen_loader, test_uns
     print('GZSL: gamma: {0:.2f}'.format(gamma))
 
     #### print best results
-    if args.testing is None:
+    if args.testing is not True:
         print('Best GZSL : U = {:.4f}, S = {:.4f}, H = {:.4f}'.format(best_GZSL[0], best_GZSL[1], best_GZSL[2]))
         print('Best ZSL : ACC = {:.4f} \n'.format(best_ZSL))
 
